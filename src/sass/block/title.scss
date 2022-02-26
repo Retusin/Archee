@@ -1,0 +1,46 @@
+.title {
+  @include font-cabinet-black;
+  @include font(32px, 40px);
+  color: $color-text-dark;
+  margin-top: 0;
+
+  &_section {
+    @include font(32px, 40px);
+
+    @include bp(md) {
+      @include font(48px, 60px);
+    }
+  }
+
+  &_promo {
+    @include font(32px, 40px);
+
+     @include bp(sm) {
+      @include font(45px, 55px);
+    }
+
+    @include bp(xl) {
+      @include font(62px, 77px);
+    }
+  }
+
+  &_arch {
+    @include font(24px, 30px);
+  }
+
+  &_white {
+    color: #fff;
+  }
+
+  &_overline::before {
+    display: block;
+    content: "";
+    max-width: 300px;
+    border-top: solid 1px $color-text-base;
+    margin: 0 auto 20px;
+
+    @include bp(lg) {
+      margin-bottom: 20px;
+    }
+  }
+}

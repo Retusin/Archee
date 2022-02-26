@@ -1,0 +1,20 @@
+.projects-list {
+  @include reset-list;
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 50px;
+
+      @include bp(lg) {
+        margin-bottom: 150px;
+      }
+    }
+
+    @include bp(lg) {
+      &:nth-child(odd) {
+        flex-direction: row-reverse;
+        margin-right: -150px;
+      }
+    }
+  }
+}

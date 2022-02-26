@@ -1,0 +1,41 @@
+.lang {
+  @include reset-list;
+
+  &__link {
+    @include reset-link;
+    @include font-helvetica-medium;
+    @include font(30px, 45px);
+    color: $color-text-dark;
+    text-transform: uppercase;
+
+    @include bp(md) {
+      @include font(14px, 21px);
+    }
+  }
+
+  &__item {
+    display: none;
+  }
+
+  &__item:first-child {
+    display: flex;
+    align-items: center;
+
+    &::after {
+      display: table;
+      content: "";
+      width: 12px;
+      height: 7px;
+      background: url("../img/drop.svg") no-repeat;
+      margin-left: 10px;
+    }
+  }
+
+  &:hover &__item {
+    display: flex;
+
+    &::after {
+      transform: rotate(180deg);
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.about {
+  background-color: $color-bg-about;
+  padding-top: 75px;
+  padding-bottom: 75px;
+
+  &__container {
+    text-align: center;
+
+    @include bp(lg) {
+      display: flex;
+      align-items: center;
+      text-align: left;
+    }
+  }
+
+  &__img {
+    mix-blend-mode: darken;
+
+    @include bp(lg) {
+      max-width: 500px;
+      margin-right: 37px;
+    }
+
+    @include bp(xl) {
+      max-width: 100%;
+      margin-left: -150px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    @include reset-model;
+    margin-bottom: 40px;
+  }
+}

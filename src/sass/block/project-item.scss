@@ -1,0 +1,36 @@
+.project-item {
+  @include bp(lg) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__img {
+    margin-bottom: 30px;
+
+    @include bp(lg) {
+      margin-bottom: 0;
+      margin-right: 20px;
+    }
+
+    @include bp(xl) {
+      margin-right: 0;
+    }
+  }
+
+  &__info {
+    max-width: 330px;
+    margin: 0 auto;
+
+    @include bp(lg) {
+      margin: auto 10px 0 0;
+    }
+  }
+
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__description {
+    @include reset-model;
+  }
+}

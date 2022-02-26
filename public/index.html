@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archee</title>
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="icon" href="img/favicon/favicon.svg">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="manifest" href="manifest.json">
+
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" defer></script> -->
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Шапка -->
+        <header class="header">
+            <div class="container header__container">
+                <img src="img/logo.svg" alt="Logo Archee" class="header__logo logo">
+
+
+                <div class="header__menu menu">
+                    <nav class="header__nav nav">
+                        <ul class="nav-list">
+                            <li class="nav-list__item"><a href="#home" class="nav-list__link">Home</a></li>
+                            <li class="nav-list__item"><a href="#project" class="nav-list__link">Project</a></li>
+                            <li class="nav-list__item"><a href="#services" class="nav-list__link">Services</a></li>
+                            <li class="nav-list__item"><a href="#about" class="nav-list__link">About</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="header__toolbar toolbar">
+                        <ul class="toolbar__lang lang">
+                            <li class="lang__item"><a href="#eng" class="lang__link">Eng</a></li>
+                            <li class="lang__item"><a href="#rus" class="lang__link">Rus</a></li>
+                        </ul>
+
+                        <button class="btn btn_contact">Contact</button>
+                    </div>
+                    <button class="menu__close">X</button>
+                </div>
+                <button class="header__gamb gamb">Open Menu</button>
+            </div>
+        </header>
+
+        <main class="main">
+            <!-- Промо-блок -->
+            <section class="promo">
+                <div class="container">
+                    <h1 class="promo__title title title_promo">Architecture that recognizes all your sensibilities</h1>
+                    <p class="promo__description">Welcome to Archee, a reliable business partner on your path to building a better
+                        looking future for all.</p>
+                    <button class="promo__btn btn btn_promo">Make An Enquiry</button>
+
+                    <div class="promo__footer">
+                        <section class="promo__rating rating">
+                            <h2 class="rating__title">Ratings <span class="rating__grade">5.0</span></h2>
+                            <p class="rating__description">Trusted by Clients From Worldwide</p>
+
+                            <ul class="rating-list">
+                                <li class="rating-list__item"><img src="img/rating-1.png" alt="Username" class="rating-list__object">
+                                </li>
+                                <li class="rating-list__item"><img src="img/rating-2.png" alt="Username" class="rating-list__object">
+                                </li>
+                                <li class="rating-list__item"><img src="img/rating-3.png" alt="Username" class="rating-list__object">
+                                </li>
+                                <li class="rating-list__item"><img src="img/rating-4.png" alt="Username" class="rating-list__object">
+                                </li>
+                                <li class="rating-list__item"><button class="rating-list__object rating-list__object_more">+4k</button>
+                                </li>
+                            </ul>
+                        </section>
+
+                        <section class="promo__contact contact">
+                            <a href="tel:+6530025656376" class="contact__phone">+65-3002 56 56 376</a>
+                            <p class="contact__description">If you're in a hurry, quick call for us. We are here 24/7 to help you
+                                asap.</p>
+                        </section>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Форма поиска -->
+            <section class="search container main__search">
+                <div class="search__block">
+                    <h2 class="search__title">Search the price you looking for</h2>
+
+                    <form action="#" class="search-form">
+                        <input type="text" class="search-form__field search-form__field_location" placeholder="Location">
+                        <input type="text" class="search-form__field search-form__field_type" placeholder="Type">
+                        <input type="text" class="search-form__field search-form__field_budget" placeholder="Budget">
+
+                        <button class="search-form__btn btn btn_search">Search Now</button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Услуги -->
+            <section class="services" id="services">
+                <div class="container">
+                    <h2 class="vhidden">Sevices</h2>
+
+                    <ul class="services-list">
+                        <li class="services-list__item services-item services-item_interior">
+                            <h3 class="services-item__title title">Arch & Interior</h3>
+                            <p class="services-item__description">
+                                We bring magic in the building and interior to fulfill your dream home.
+                            </p>
+
+                            <a href="#" class="services-item__more">120 Projects</a>
+                        </li>
+
+                        <li class="services-list__item services-item services-item_design">
+                            <h3 class="services-item__title title">Design</h3>
+                            <p class="services-item__description">
+                                Creative design with digital products that help you promote your business.
+                            </p>
+
+                            <a href="#" class="services-item__more">50 Projects</a>
+                        </li>
+
+                        <li class="services-list__item services-item services-item_product">
+                            <h3 class="services-item__title title">Product</h3>
+                            <p class="services-item__description">
+                                We bring magic in the building & interior to fulfill your dream home.
+                            </p>
+
+                            <a href="#" class="services-item__more">310 Projects</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- О нас -->
+            <section class="about" id="about">
+                <div class="container about__container">
+                    <img src="img/about.png" alt="House" class="about__img">
+
+                    <div class="about__info">
+                        <h2 class="about__title title title_section">We aim to set the trends of your modern living.</h2>
+                        <p class="about__description">
+                            Over 39,000 people work for us in more than 70 countries all over the This breadth of global coverage,
+                            combined with specialist services. Archee allow you to design unlimited panels and real estate custom
+                            forms to capture leads and keep record of all information.
+                        </p>
+
+                        <button class="btn btn_about">Contact Now</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Проекты -->
+            <section class="projects" id="project">
+                <div class="container projects__container">
+                    <h2 class="projects__title title title_section">Selected Projects</h2>
+
+                    <ul class="projects-list">
+                        <li class="projects-list__item project-item">
+                            <img src="img/project-1.jpg" alt="Outdoor structure" class="project-item__img">
+                            <div class="project-item__info">
+                                <h3 class="project-item__title title title_overline">Outdoor structure</h3>
+                                <p class="project-item__description">
+                                    Ed ea inciderint con cludatu alia assum assen tior id nec, duo debet mundi cons equnt rei. No sed
+                                    regione sapient assentior, men itum.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="projects-list__item project-item">
+                            <img src="img/project-2.jpg" alt="Indoor structure" class="project-item__img">
+                            <div class="project-item__info">
+                                <h3 class="project-item__title title title_overline">Indoor structure</h3>
+                                <p class="project-item__description">
+                                    Ed ea inciderint con cludatu alia assum assen tior id nec, duo debet mundi cons equnt rei. No sed
+                                    regione sapient assentior, men itum.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="projects-list__item project-item">
+                            <img src="img/project-3.jpg" alt="Modern Furniture" class="project-item__img">
+                            <div class="project-item__info">
+                                <h3 class="project-item__title title title_overline">Modern Furniture</h3>
+                                <p class="project-item__description">
+                                    Ed ea inciderint con cludatu alia assum assen tior id nec, duo debet mundi cons equnt rei. No sed
+                                    regione sapient assentior, men itum.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="projects-list__item project-item">
+                            <img src="img/project-4.jpg" alt="Modern Kitchen" class="project-item__img">
+                            <div class="project-item__info">
+                                <h3 class="project-item__title title title_overline">Modern Kitchen</h3>
+                                <p class="project-item__description">
+                                    Ed ea inciderint con cludatu alia assum assen tior id nec, duo debet mundi cons equnt rei. No sed
+                                    regione sapient assentior, men itum.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Архитекторы -->
+            <section class="architects">
+                <div class="container architects__container">
+                    <h2 class="architects__title title title_section title_white">Architects of Archee</h2>
+
+                    <!-- Slider main container -->
+                    <div class="swiper architects__swiper architects-swiper">
+                        <!-- Additional required wrapper -->
+                        <ul class="swiper-wrapper architects-swiper__list">
+
+                            <li class="swiper-slide architects-swiper__item architects-item">
+                                <img src="img/slide-1.jpg" alt="Ralph Edwards" class="architects-item__img">
+
+                                <div class="architects-item__info">
+                                    <h3 class="architects-item__title title title_white title_arch">Ralph Edwards</h3>
+                                    <p class="architects-item__post">Architect</p>
+                                </div>
+                            </li>
+
+                            <li class="swiper-slide architects-swiper__item architects-item">
+                                <img src="img/slide-2.jpg" alt="Cody Fisher" class="architects-item__img">
+
+                                <div class="architects-item__info">
+                                    <h3 class="architects-item__title title title_white title_arch">Cody Fisher</h3>
+                                    <p class="architects-item__post">Interior Designer</p>
+                                </div>
+                            </li>
+
+                            <li class="swiper-slide architects-swiper__item architects-item">
+                                <img src="img/slide-3.jpg" alt="Floyd Miles" class="architects-item__img">
+
+                                <div class="architects-item__info">
+                                    <h3 class="architects-item__title title title_white title_arch">Floyd Miles</h3>
+                                    <p class="architects-item__post">Project Manager</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="architects__nav architects-nav">
+                        <button class="swiper-prev architects-nav__btn architects-nav__btn_prev">Назад</button>
+
+                        <button class="swiper-next architects-nav__btn architects-nav__btn_next">Вперед</button>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Статьи -->
+            <section class="articles">
+                <div class="container articles__container">
+                    <h2 class="vhidden">Articles</h2>
+
+                    <ul class="articles-list">
+                        <li class="articles-list__item">
+                            <article class="article-item">
+                                <img src="img/article-1.jpg" alt="How To Choose The Best Outdoor Decor" class="article-item__img">
+                                <footer class="article-item__footer">
+                                    <time class="article-item__time" datetime="2021-12-16">16th Dec, 2021</time>
+                                    <cite class="article-item__author">Esther Howard</cite>
+                                </footer>
+                                <h3 class="article-item__title title title_overline">How To Choose The Best Outdoor Decor</h3>
+                                <p class="article-item__description">
+                                    Getting out in fresh air and shaking off too much indoor, screen time should be important to everyone.
+                                    We’re designed to endure different temperatures and weather systems...
+                                </p>
+                            </article>
+                        </li>
+
+                        <li class="articles-list__item">
+                            <article class="article-item">
+                                <img src="img/article-2.jpg" alt="What Clients Want in Their Kitchen: The Perfect Range" class="article-item__img">
+                                <footer class="article-item__footer">
+                                    <time class="article-item__time" datetime="2021-12-20">20th Dec, 2021</time>
+                                    <cite class="article-item__author">Leslie Alexander</cite>
+                                </footer>
+                                <h3 class="article-item__title title title_overline">What Clients Want in Their Kitchen: The Perfect
+                                    Range</h3>
+                                <p class="article-item__description">
+                                    I’ve learned that the number one appliance that clients want in their kitchen is the perfect range.
+                                    That’s because a number of my design clients are serious home cooks...
+                                </p>
+                            </article>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Подвал -->
+            <footer class="footer container">
+                <div class="footer__block">
+                    <img src="img/logo.svg" alt="Logo Archee" class="footer__logo">
+
+                    <address class="footer__item footer__address">
+                        Zürich, Switzerland <br>
+            Bahnhofstrasse 7/1 <br>
+            44 1793 123 456
+                    </address>
+
+                    <ul class="footer__nav footer-nav footer__item">
+                        <li class="footer-nav__item">
+                            <a href="#project" class="footer-nav__link">Project</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="#services" class="footer-nav__link">Services</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="#about" class="footer-nav__link">About</a>
+                        </li>
+                    </ul>
+
+                    <ul class="footer__nav footer-nav footer__item">
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link" target="_blank">Facebook</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link" target="_blank">Instagram</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link" target="_blank">Twitter</a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+
+        </main>
+    </div>
+
+</body>
+
+</html>

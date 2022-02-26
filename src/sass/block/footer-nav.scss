@@ -1,0 +1,11 @@
+.footer-nav {
+  @include reset-list;
+
+  &__link {
+    @include reset-link;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

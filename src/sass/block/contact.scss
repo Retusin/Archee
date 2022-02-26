@@ -1,0 +1,17 @@
+.contact {
+  max-width: 250px;
+
+  &__phone {
+    @include font-cabinet-bold;
+    @include font(16px, 20px);
+    color: $color-orange;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  &__description {
+    @include reset-model;
+    @include font-helvetica-medium;
+    @include font(12px, 18px);
+  }
+}

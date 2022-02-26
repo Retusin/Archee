@@ -1,0 +1,44 @@
+.services-item {
+  text-align: center;
+
+  @include bp(lg) {
+    text-align: left;
+  }
+
+
+  &::before {
+    display: inline-table;
+    margin-bottom: 22px;
+  }
+
+  &_interior::before {
+    content: url("../img/icon-interior.svg");
+  }
+
+  &_design::before {
+    content: url("../img/icon-design.svg");
+  }
+
+  &_product::before {
+    content: url("../img/icon-product.svg");
+  }
+
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__description {
+    @include reset-model;
+    margin-bottom: 25px;
+  }
+
+  &__more {
+    @include font-cabinet-bold;
+    @include font(16px, 20px);
+    color: $color-text-dark;
+
+    &:hover {
+      color: $color-orange;
+    }
+  }
+}

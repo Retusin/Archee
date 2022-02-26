@@ -1,0 +1,23 @@
+.btn {
+  @include reset-button;
+  @include font-cabinet-bold;
+  @include font(16px, 20px);
+  background-color: $color-orange;
+  color: #FFF;
+  padding: 20px 40px;
+  border-radius: 6px;
+  transition: 0.2s;
+
+  &:hover {
+    background-color: darken($color-orange, 5%);
+  }
+
+  &_contact {
+    padding: 15px 40px;
+
+     @include bp(md) {
+       padding: 10px 30px;
+       @include font(16px, 20px)
+     }
+  }
+}

@@ -1,0 +1,9 @@
+.articles {
+  padding: 120px 0;
+  text-align: center;
+
+  @include bp(md) {
+    padding: 120px 0;
+    text-align: left;
+  }
+}

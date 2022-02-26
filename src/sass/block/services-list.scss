@@ -1,0 +1,17 @@
+.services-list {
+  @include reset-list;  
+
+  &__item {    
+    margin-bottom: 50px;
+  }
+
+  @include bp(lg) {
+    display: flex;
+    gap: 134px;
+
+    &__item {    
+      max-width: 292px;
+      margin-bottom: 0;
+    }
+  }
+}

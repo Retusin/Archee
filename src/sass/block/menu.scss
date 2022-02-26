@@ -1,0 +1,26 @@
+.menu {
+  background-color: #fff;
+  padding: 50px;
+
+  @include bp(md) {
+    background-color: transparent;
+    padding: 0;
+    position: relative;
+  }
+
+  &__close {
+    @include reset-button;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    font-size: 35px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    @include bp(md) {
+      display: none;
+    }
+  }
+}

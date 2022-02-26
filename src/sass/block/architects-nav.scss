@@ -1,0 +1,27 @@
+.architects-nav {
+
+  &__btn {
+    @include reset-button;
+    font-size: 0;
+    margin-right: 7px;
+    
+    &::before {
+      display: table;
+      width: 35px;
+      height: 24px;
+    }
+
+    &_prev::before {
+      content: url("../img/swiper-arrow-prev.svg");
+    }
+
+    &_next::before {
+      content: url("../img/swiper-arrow-next.svg");
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+}

@@ -1,0 +1,54 @@
+.search-form {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include bp(lg) {
+    flex-wrap: nowrap;
+  }
+
+  &__field {
+    @include reset-input;
+    @include font-helvetica-medium;
+    @include font(16px, 24px);
+    background-color: $color-bg-input;
+    background-repeat: no-repeat;
+    background-position: center right 22px;
+    border-radius: 6px;
+    padding: 18px 62px 18px 20px;
+    flex-grow: 1;
+    margin-bottom: 20px;
+    width: 100%;
+
+    @include bp(md) {
+      margin-right: 20px;
+    }
+
+    @include bp(lg) {
+      margin-bottom: 0;
+    }
+
+    &_location {
+      background-image: url("../img/icon-location.svg");
+    }
+
+    &_type {
+      background-image: url("../img/icon-type.svg");
+    }
+
+    &_budget {
+      background-image: url("../img/icon-budget.svg");
+    }
+
+    &::placeholder {
+      color: rgba(97, 89, 77, 0.6);
+    }
+
+    &:focus {
+      outline: solid 1px #ddd;
+    }
+  }
+
+  &__btn {
+    flex-shrink: 0;
+  }
+}

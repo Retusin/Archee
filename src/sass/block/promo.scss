@@ -1,0 +1,89 @@
+.promo {
+  padding-top: 80px;
+  padding-bottom: 167px;
+  background-color: $color-bg-promo;
+  background-image: url("../img/promo-img.png"), url("../img/promo-star.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: top 210px center, top 16px left 26px;
+  background-size: 280px auto, 249px auto;
+  text-align: center;
+
+  @include bp(sm) {
+    background-position: top 245px center, top 16px left 26px;
+    background-size: 500px auto, 249px auto;
+  }
+
+  @include bp(md) {
+    text-align: left;
+    background-position: top 80px right 0, top 16px left 26px;
+    background-size: 520px auto, 249px auto;
+  }
+
+  @include bp(lg) {
+    padding-top: 138px;
+    background-position: top 145px right 0, top 16px left 26px;
+    background-size: 670px auto, 249px auto;
+  }
+
+  @include bp(xl) {
+    background-position: top 138px right 0, top 16px left 26px;
+    background-size: 670px auto, 249px auto;
+  }
+
+  &__title {
+    max-width: 300px;
+    margin: 0 auto 220px;
+
+    @include bp(sm) {
+      max-width: 540px;
+      margin: 0 0 20px;
+      margin: 0 auto 300px;
+    }
+
+    @include bp(md) {
+      margin: 0 0 20px;
+    }
+  }
+
+  &__description {
+    @include font(18px, 30px);
+    max-width: 300px;
+    margin: 0 auto 34px;
+
+    @include bp(md) {
+      margin: 0 0 34px;
+    }
+
+    @include bp(lg) {
+      max-width: 455px;
+      margin: 0 0 34px;
+    }
+  }
+
+  &__btn {
+    margin-bottom: 100px;
+  }
+
+  &__footer {
+    @include bp(md) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__rating {
+    margin: 0 auto;
+
+    @include bp(md) {
+      margin: 0;
+    }
+  }
+
+  &__contact {
+    margin: 55px auto 0;
+
+    @include bp(md) {
+      margin: 55px 0 0;
+    }
+  }
+}

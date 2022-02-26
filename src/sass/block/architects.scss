@@ -1,0 +1,46 @@
+.architects {
+  padding: 60px 0;
+  background: #2c2321;
+  text-align: center;
+
+  @include bp(lg) {
+    padding: 120px 0;
+  }
+
+  @include bp(xxl) {
+    text-align: left;
+  }
+
+  &__container {
+    position: relative;
+
+    @include bp(xxl) {
+      display: flex;
+      align-items: flex-start;
+    }
+  }
+
+  &__title {
+    @include bp(xxl) {
+      max-width: 388px;
+      flex-shrink: 0;
+    }
+  }
+
+  &__swiper {
+    flex-shrink: 0;
+    margin-bottom: 30px;
+
+    @include bp(xxl) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__nav {
+    @include bp(xxl) {
+      position: absolute;
+      bottom: 0;
+      left: 15px;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.rating-list {
+  @include reset-list;
+  display: inline-flex;
+
+  &__item ~ &__item {
+    margin-left: -10px;
+  }
+
+  &__object {
+    width: 48px;
+    height: 48px;
+    border: 2px solid #FFF;
+    border-radius: 50%;
+
+    &_more {
+      @include reset-button;
+      @include font-cabinet-bold;
+      @include font(16px, 16px);
+      background-color: $color-orange;
+      color: #FFF;
+      text-align: center;
+      padding: 16px 0;
+    }
+  }
+}

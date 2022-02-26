@@ -1,0 +1,65 @@
+@use "sass:math";
+
+// Настройки
+@import "_config/variables";
+@import "_config/fonts";
+
+// Миксины
+@import "_mixins/reset";
+@import "_mixins/media";
+@import "_mixins/container";
+@import "_mixins/flex";
+
+// Библиотеки
+@import "_libs/swiper";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box
+}
+
+html, body {
+  @include reset-model;
+  min-height: 100vh;
+  overflow-x: hidden;
+  // background-color: #e5e5e5;
+
+  @include font-helvetica-regular;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+}
+
+
+// Визуальное скрытие элементов
+.vhidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+img {
+  max-width: 100%;
+}
+
+
+// Ограничение для макета
+.wrapper {
+  @include wrapper;
+  background-color: $color-bg-base;
+  color: $color-text-base;
+}
+
+// Контентная область
+.container {
+  @include container;
+}
+
+// Подключение блоков
+@import 'block/*.scss';

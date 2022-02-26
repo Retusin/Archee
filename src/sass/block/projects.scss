@@ -1,0 +1,13 @@
+.projects {
+  padding: 60px x;
+  text-align: center;
+
+  @include bp(ld) {
+    padding: 120px 0;
+    text-align: left;
+  }
+
+  &__title {
+    margin-bottom: 50px;
+  }
+}

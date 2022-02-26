@@ -1,0 +1,27 @@
+.footer {
+  &__block {
+    padding-top: 40px;
+    padding-bottom: 50px;
+    border-top: solid 1px $color-text-base;
+    text-align: center;
+
+    @include bp(md) {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      text-align: left;
+    }
+  }
+
+  &__item {
+    margin-bottom: 30px;
+
+     @include bp(md) {
+       margin-bottom: 0;
+     }
+  }
+
+  &__address {
+    font-style: normal;
+  }
+}

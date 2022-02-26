@@ -1,0 +1,16 @@
+.articles-list {
+  @include reset-list;
+
+  @include bp(md) {
+    display: flex;
+    gap: 70px;
+  }
+
+  &__item {
+    margin-bottom: 40px;
+
+    @include bp(md) {
+      margin-bottom: 0;
+    }
+  }
+}

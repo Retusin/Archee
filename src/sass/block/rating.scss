@@ -1,0 +1,27 @@
+.rating {
+  &__title {
+    @include reset-model;
+    @include font-cabinet-bold;
+    @include font(20px, 22px);
+    color: $color-text-dark;
+    letter-spacing: 0.02em;
+    margin-bottom: 7px;
+  }
+
+  &__grade{
+    &::before {
+      display: inline-block;
+      content: url("../img/rating-star.svg");
+      width: 16px;
+      height: 16px;
+      margin: 0 5px;
+    }
+  }
+  
+  &__description {
+    @include reset-model;
+    @include font(16px, 24px);
+    letter-spacing: 0.02em;
+    margin-bottom: 20px;
+  }
+}

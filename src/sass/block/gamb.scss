@@ -1,0 +1,15 @@
+.gamb {
+  @include reset-button;
+  font-size: 0;
+  width: 30px;
+  height: 30px;
+
+  &::before {
+    display: block;
+    content: "";
+    height: 3px;
+    background-color: $color-orange;
+    border-radius: 25px;
+    box-shadow: 0 7px 0 0 $color-orange, 0 -7px 0 0 $color-orange;
+  }
+}
